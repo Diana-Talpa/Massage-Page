@@ -1,0 +1,58 @@
+/* Container */
+.logo-slider-wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+/* Long row of logos */
+.logo-slider-track {
+  display: flex;
+  align-items: center;
+  transition: transform 0.22s ease-out; /* fast jump */
+}
+
+/* Each logo cell */
+.logo-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 60px; /* space between logos */
+  padding-bottom: 14px; /* space for underline */
+  position: relative; /* needed for ::after underline */
+  border-bottom: none; /* we don't use normal border underline */
+}
+
+/* Logo image */
+.logo-slide img {
+  height: 40px;
+  width: auto;
+  opacity: 0.4;
+  filter: grayscale(100%);
+  transition: all 0.2s ease;
+}
+
+/* Active logo (center one) */
+.logo-slide.active img {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.15);
+}
+
+/* ⭐ CUSTOM UNDERLINE (50px wide, only for active slide) */
+.logo-slide::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0; /* default: hidden */
+  height: 2px;
+  background: #fb4843;
+  border-radius: 2px;
+  transition: width 0.2s ease;
+}
+
+.logo-slide.active::after {
+  width: 50px; /* visible underline for active slide */
+}

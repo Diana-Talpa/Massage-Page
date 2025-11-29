@@ -1,0 +1,39 @@
+.footer-main-content {
+  display: flex;
+  justify-content: center;
+  border-top: 4px solid #212529;
+  color: #777777;
+  background-color: #212529;
+}
+
+.footer-main-content div {
+  width: 356px;
+  padding: 10px;
+}
+
+.footer-main-content p {
+  font-size: 13px;
+}
+
+.white-color {
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-size: bold;
+}
+
+.first-footer p:nth-of-type(4) {
+  color: white;
+  font-weight: bold;
+}
+
+p.phone-number {
+  font-size: 29px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.invisible {
+  color: #212529;
+  margin: 0 0 14px;
+}

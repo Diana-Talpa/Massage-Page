@@ -1,0 +1,168 @@
+.procedure-card > div {
+  width: 255px;
+  min-height: 255px;
+  padding: 16px;
+  border-radius: 5px;
+}
+
+.procedure-1 {
+  background-image: url("../../images/sprando-masazas.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s ease;
+  position: relative;
+}
+
+.procedure-1:hover {
+  background-size: 120%;
+}
+
+.procedure-discount-1 {
+  background-color: #fe432d;
+  color: white;
+  height: 60px;
+  padding: 19px 5px;
+  width: 60px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  top: -10%;
+  left: 80%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.procedure-2 {
+  background-image: url("../../images/nugaros-masazas.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s ease;
+  position: relative;
+}
+
+.procedure-2:hover {
+  background-size: 120%;
+}
+.procedure-discount-2 {
+  background-color: #fe432d;
+  color: white;
+  height: 60px;
+  padding: 19px 5px;
+  width: 60px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  top: -10%;
+  left: 80%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.procedure-3 {
+  background-image: url("../../images/bendras-viso-kuno-masazas.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s ease;
+  position: relative;
+}
+
+.procedure-3:hover {
+  background-size: 120%;
+}
+.procedure-discount-3 {
+  background-color: #fe432d;
+  color: white;
+  height: 60px;
+  padding: 19px 5px;
+  width: 60px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  top: -10%;
+  left: 80%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gift-coupon span {
+  height: 255px;
+  width: 255px;
+  background-color: #fe432d;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  border-radius: 5px;
+  font-size: 95px;
+  overflow: hidden;
+}
+
+.grow-text {
+  display: inline-block;
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+
+.gift-coupon span:hover .grow-text {
+  transform: scale(1.1);
+}
+
+.procedure p {
+  text-align: center;
+  color: #fe432d;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 5px;
+}
+
+.procedure-price {
+  height: 96px;
+  width: 220px;
+  background-color: #212529cc;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 500;
+}
+.old-price {
+  font-size: 15px;
+  text-decoration: line-through;
+  color: #ef8495;
+}
+.procedure-price p {
+  font-size: 15px;
+  margin: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.one-procedure-price {
+  position: absolute;
+  top: 85%;
+  left: 15%;
+  background-color: #fe432d;
+  padding: 5px 10px;
+  font-size: 13px;
+  border-radius: 2px;
+}
+
+.under-card {
+  color: #fe432d;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 5px;
+}

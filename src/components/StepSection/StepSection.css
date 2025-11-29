@@ -1,0 +1,87 @@
+.steps-section {
+  padding-top: 400px;
+  margin: 0 auto;
+}
+
+.rotated-list {
+  list-style: none;
+  counter-reset: mycounter;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.rotated-list li {
+  counter-increment: mycounter;
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+  color: #a1a1a1;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.rotated-list li p {
+  color: #fe432d;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: initial;
+}
+
+.rotated-list li::before {
+  content: counter(mycounter) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  text-align: center;
+  font-size: 48px;
+  transform: rotate(-20deg);
+  display: inline-block;
+  color: #fe432d;
+  font-weight: 700;
+}
+
+.circle {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background: #e3f5e2;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.circle img {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+}
+
+.step {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.step.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.middle-step {
+  position: relative;
+}
+
+.red-line {
+  position: absolute;
+  bottom: -20px; /* distance below the step */
+  left: 60%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: #fe432d;
+}

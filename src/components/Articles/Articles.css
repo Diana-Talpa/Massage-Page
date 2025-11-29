@@ -1,0 +1,35 @@
+.articles-wrapper {
+  padding: 84px 12px;
+  margin: 24px;
+}
+hr {
+  border: 1px solid rgb(245, 244, 244);
+  width: 1090px;
+  text-align: center;
+  display: flex;
+  justify-self: center;
+  margin: 20px 20px 20px 0;
+}
+.articles-wrapper h2 {
+  text-align: center;
+  color: #fe423d;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 17px;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: slideRightToTop 1s ease forwards;
+  animation-delay: 1s;
+}
+
+@keyframes slideRightToTop {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.article-cards {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,43 @@
+.logo {
+  width: 180px;
+  height: 80px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+header {
+  position: sticky;
+  background-color: white;
+  top: 0;
+  padding: 10px 0px 20px 0px;
+  z-index: 1000;
+}
+.navigation ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+}
+
+.nav-link:hover {
+  color: #fe432d;
+}
+
+.nav-link.active {
+  color: #fe432d;
+}
+
+.bag-img {
+  height: 14px;
+  width: 14px;
+}

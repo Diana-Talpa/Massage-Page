@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+}
+
+/* MAIN SECTION */
+
+.video-massage {
+  min-width: 100%;
+  width: auto;
+  height: 955px;
+  object-fit: cover;
+}
+
+.on-top-form {
+  width: 525px;
+  background-color: #fe432d;
+  position: absolute;
+  top: 700px;
+  left: 300px;
+  margin: 8px;
+}
+.on-top-form h1 {
+  font-size: 21px;
+  color: white;
+  padding: 5px;
+  margin: 0;
+}
+
+.appear-scale {
+  opacity: 0;
+  transform: scale(0.6); /* start smaller */
+  transform-origin: center; /* grow from the center */
+  animation: popIn 0.7s ease-in forwards;
+  animation-delay: 1s; /* optional */
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6); /* tiny + invisible */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); /* full size */
+  }
+}
+
+@keyframes slideRightToLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.registracija-numeris {
+  background-color: #212529;
+  color: white;
+  padding: 48px;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.slide-span {
+  font-size: 28px;
+  display: inline-block; /* needed for transform */
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.slide-span.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+}

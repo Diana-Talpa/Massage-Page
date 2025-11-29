@@ -1,0 +1,25 @@
+.about-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  padding: 78px 0;
+}
+.element {
+  margin: 24px -12;
+  width: 350px;
+  height: 219px;
+}
+.element img {
+  height: 36px;
+  width: 35px;
+}
+.element h2 {
+  font-size: 16px;
+  color: #212529;
+  text-transform: uppercase;
+}
+.element p {
+  font-size: 14px;
+  color: #777777;
+}
