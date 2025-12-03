@@ -3,6 +3,7 @@
   width: 100%;
   overflow: hidden;
   padding: 20px 0;
+  margin: 48px 0 20px;
 }
 
 /* Long row of logos */
@@ -54,5 +55,5 @@
 }
 
 .logo-slide.active::after {
-  width: 50px; /* visible underline for active slide */
+  width: 50px;
 }

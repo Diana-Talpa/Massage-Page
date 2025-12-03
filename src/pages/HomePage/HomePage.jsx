@@ -7,9 +7,6 @@ import TopProceduresSection from "../../components/TopProceduresSection/TopProce
 import Articles from "../../components/Articles/Articles";
 import About from "../../components/About/About";
 import ReviewsSlider from "../../components/ReviewsSlider/ReviewsSlider";
-import LogoSlider from "../../components/LogoSlider/LogoSlider";
-import Footer from "../../components/Footer/Footer";
-
 function HomePage() {
   useEffect(() => {
     const spans = document.querySelectorAll(".slide-span");
@@ -94,14 +91,6 @@ function HomePage() {
 
         <section className="reviews-section">
           <ReviewsSlider />
-        </section>
-
-        <section className="partners-section">
-          <LogoSlider />
-        </section>
-
-        <section className="footer-section">
-          <Footer />
         </section>
       </main>
     </div>

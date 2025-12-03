@@ -1,0 +1,125 @@
+.licencija-title {
+  background-color: #fe423d;
+  text-align: center;
+  color: white;
+  padding: 30px 0;
+  margin: 0 0 25px;
+  width: 100%;
+}
+.licencija-title h1 {
+  margin: 0;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+.licencija-title ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.licencija-title ul li {
+  font-size: 11px;
+}
+
+.licencija img {
+  height: 800px;
+  width: 1000px;
+  padding: 40px 0;
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+.licencija {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.licencija-link {
+  background-color: #fe423d;
+  color: white;
+  padding: 4px 14px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 48px 0 0;
+}
+
+.licencija-wrapper h2 span {
+  font-weight: 800;
+}
+.second-title {
+  position: relative;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+  margin: 48px 0 48px;
+}
+.second-title::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px; /* thickness of line */
+  background-color: red;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+}
+.licencija-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers big blocks like bottom-section */
+}
+
+/* bottom text block */
+.bottom-section {
+  max-width: 1000px; /* same width as your text */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* keep everything inside left-aligned */
+  gap: 10px; /* optional: space between elements */
+}
+
+/* paragraphs */
+.licencija-wrapper p {
+  font-size: 14px;
+  color: #777777;
+  width: 100%; /* now follow parent width instead of fixed 1000px */
+}
+
+.address-list {
+  margin: 0;
+  padding: 0; /* <-- kills the 40px browser padding */
+  list-style: none;
+}
+
+.address-list li {
+  color: #777777;
+  list-style: none;
+  position: relative;
+  padding: 0 0 0 12px;
+  margin: 0;
+  font-size: 14px;
+}
+
+.address-list li::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 0;
+  height: 0;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-left: 5px solid #fe423d;
+}
+.licencija-wrapper h3 {
+  margin: 0;
+}
